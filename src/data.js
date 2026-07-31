@@ -1,0 +1,115 @@
+﻿export const navLinks = [
+  { id: 'about', label: 'About' },
+  { id: 'education', label: 'Education' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'contact', label: 'Contact' }
+];
+
+export const heroData = {
+  greeting: "Hello, I'm",
+  name: "Nardos Tsige",
+  title: "Junior Data Analyst",
+  bio: "Passionate Junior Data Analyst with expertise in Data Engineering, Financial Analytics, and Machine Learning. Dedicated to uncovering actionable insights from complex datasets.",
+  imageUrl: "/profile.jpg"
+};
+
+export const aboutData = {
+  summary: "I am a Junior Data Analyst with intensive training in Data Engineering, Financial Analytics, and Machine Learning. I specialize in building end-to-end analytics pipelines, conducting exploratory data analysis, and delivering actionable business insights through data storytelling.",
+  highlights: [
+    "Proficient in Python, SQL, and Data Visualization",
+    "Experience with real-world climate and fintech data",
+    "Active on LeetCode (160+ problems solved)"
+  ]
+};
+
+export const skillsData = [
+  { id: 1, name: "Data Analysis (EDA, A/B Testing)", category: "Core" },
+  { id: 2, name: "Python, Pandas, NumPy", category: "Languages and Libs" },
+  { id: 3, name: "PostgreSQL, ETL Pipelines", category: "Data Engineering" },
+  { id: 4, name: "Matplotlib, Seaborn, Power BI", category: "Visualization" },
+  { id: 5, name: "Machine Learning (Scikit-Learn)", category: "Machine Learning" },
+  { id: 6, name: "Git, GitHub, Jupyter", category: "Tools" }
+];
+
+export const educationData = [
+  {
+    id: 1,
+    institution: "10 Academy – Kifiya AI Mastery Programme",
+    degree: "Data Analytics",
+    period: "2026 – Present",
+    achievements: [
+      "Completed intensive training in Data Engineering, Financial Analytics, and Machine Learning.",
+      "Built end-to-end analytics pipelines for climate analysis and fintech customer reviews."
+    ]
+  },
+  {
+    id: 2,
+    institution: "FUSE AI-201 (Florida University South East)",
+    degree: "AI Model Development and Implementation",
+    period: "2026 – Present",
+    achievements: [
+      "Trained in Python, machine learning, deep learning, and NLP.",
+      "Built data pipelines and dashboards with actionable business insights."
+    ]
+  },
+  {
+    id: 3,
+    institution: "Addis Ababa University",
+    degree: "Bachelor of Science in Software Engineering",
+    period: "10/2025 – Present",
+    achievements: [
+      "Relevant coursework: Data Structures, Algorithms, OOP, Database Management."
+    ]
+  }
+];
+
+export const projectsData = [
+  {
+    id: 1,
+    title: "Ethiopia Financial Inclusion Forecasting",
+    description: "Time series forecasting system tracking Ethiopia's digital financial transformation using World Bank Global Findex data. Features Streamlit dashboard with scenario analysis.",
+    tech: ["Python", "Pandas", "Streamlit", "Scikit-learn", "Statsmodels"],
+    githubUrl: "https://github.com/nardos-tsige/ethiopia-fi-forecast",
+    liveUrl: null,
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800",
+    status: "github-only"
+  },
+  {
+    id: 2,
+    title: "Medical Telegram Warehouse",
+    description: "End-to-end data pipeline analyzing Ethiopian medical businesses from 14 public Telegram channels using YOLOv8, dbt, FastAPI, and Dagster.",
+    tech: ["Python", "PostgreSQL", "dbt", "FastAPI", "YOLOv8", "Dagster"],
+    githubUrl: "https://github.com/nardos-tsige/medical-telegram-warehouse",
+    liveUrl: null,
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+    status: "github-only"
+  },
+  {
+    id: 3,
+    title: "African Climate Trends Analysis",
+    description: "Climate data analysis for 5 African countries using NASA POWER satellite data. Statistical validation with evidence-backed recommendations for COP32 negotiations.",
+    tech: ["Python", "Pandas", "Streamlit", "NASA POWER API", "SciPy"],
+    githubUrl: "https://github.com/nardos-tsige/climate-challenge-week0",
+    liveUrl: null,
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&q=80&w=800",
+    status: "github-only"
+  },
+  {
+    id: 4,
+    title: "A2BRIDGE | A2SV Pathfinder",
+    description: "All-in-one preparation hub for AAU, ASTU, and AASTU students aspiring to join A2SV. Features curated LeetCode problems, Python sandbox, and interview preparation.",
+    tech: ["TypeScript", "React", "Firebase", "Vite", "Vercel"],
+    githubUrl: "https://github.com/nardos-tsige/A2BRIDGE-A2SV-Pathfinder-Website",
+    liveUrl: "https://a2-bridge-a2-sv-pathfinder-website.vercel.app/",
+    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800",
+    status: "live"
+  }
+];
+
+export const contactData = {
+  email: "tsigeferejanardos@gmail.com",
+  phone: "+251941439593",
+  location: "Addis Ababa",
+  github: "https://github.com/nardos-tsige",
+  linkedin: "https://www.linkedin.com/in/nardos-tsige-b642093a3/"
+};

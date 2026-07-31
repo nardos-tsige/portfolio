@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #1A1A1A;
+  --text-color: #EAEAEA;
+  --card-bg: rgba(45, 45, 45, 0.6);
+  --border-color: #2D2D2D;
+  --border-light: #404040;
+  --shadow-color: rgba(212, 175, 55, 0.2);
+  --accent-gold: #D4AF37;
+  --nav-bg: #1A1A1A;
+  --text-muted: #6C757D;
+}
+
+body.light-mode {
+  --bg-color: #F8F9FA;
+  --text-color: #1A1A1A;
+  --card-bg: #FFFFFF;
+  --border-color: #E0E0E0;
+  --border-light: #D0D0D0;
+  --shadow-color: rgba(0,0,0,0.08);
+  --accent-gold: #B8962E;
+  --nav-bg: #F8F9FA;
+  --text-muted: #6C757D;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  margin: 0;
+  border: 12px solid #000000;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  padding-top: 80px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  flex: 1;
+}
+
+.content-grid .container {
+  max-width: none;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-panel > section {
+  border-bottom: 1px solid var(--border-color);
+}
+.left-panel > section:last-child {
+  border-bottom: none;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel > section {
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+}
+.right-panel > section:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .right-panel > section {
+    border-left: none;
+  }
+}
+
+section {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-align: left;
+}
+
+.sectionDivider {
+  display: none;
+}

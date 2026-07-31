@@ -1,0 +1,163 @@
+.navbar {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  width: calc(100% - 24px);
+  background: var(--nav-bg);
+  z-index: 100;
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.3s ease;
+  height: 80px;
+}
+
+.navContainer {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-color);
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoIcon {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--accent-gold);
+  background: transparent;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--accent-gold);
+  border-radius: 4px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.2s ease;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.link:hover {
+  color: var(--accent-gold);
+}
+
+.themeToggle {
+  background: var(--border-color);
+  border: none;
+  border-radius: 9999px;
+  width: 40px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: all 0.2s ease;
+  margin-left: 16px;
+}
+
+.themeToggle span {
+  background: var(--text-color);
+  color: var(--bg-color);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.themeToggle:hover {
+  background: var(--border-light);
+}
+
+:global(body.light-mode) .moon { display: none; }
+:global(body:not(.light-mode)) .sun { display: none; }
+
+/* Mobile Navigation */
+.mobileNav {
+  display: none;
+}
+.hamburgerLabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.hamburgerCheckbox {
+  display: none;
+}
+.hamburgerIcon {
+  cursor: pointer;
+  color: var(--text-color);
+}
+.mobileMenu {
+  display: none;
+  position: absolute;
+  top: 150%;
+  right: 0;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 200px;
+  box-shadow: 0 10px 25px var(--shadow-color);
+}
+.hamburgerCheckbox:checked ~ .mobileMenu {
+  display: flex;
+}
+.mobileLink {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1rem;
+}
+.mobileLink:hover {
+  color: var(--accent-gold);
+}
+.themeToggleMobile {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 8px;
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.themeToggleMobile:hover {
+  border-color: var(--accent-gold);
+}
+
+@media (max-width: 768px) {
+  .navLinks { display: none; }
+  .mobileNav { display: block; }
+}

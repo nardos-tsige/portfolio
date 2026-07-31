@@ -1,0 +1,97 @@
+.educationSection {
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.educationContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.timelineItem {
+  position: relative;
+  border-left: 2px solid var(--border-color);
+  padding-left: 16px;
+}
+
+.timelineItem:nth-child(odd) {
+  border-left-color: var(--accent-gold);
+}
+
+.timelineDot {
+  display: none;
+}
+
+.timelineContent {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  transition: none;
+}
+
+.timelineContent:hover {
+  transform: none;
+}
+
+.timelineHeader {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.degree {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.period {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.institution {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 16px 0;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+.achievements {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .timeline::before {
+    left: 20px;
+  }
+  .timelineItem {
+    padding-left: 36px;
+  }
+  .timelineDot {
+    left: -5px;
+  }
+}
