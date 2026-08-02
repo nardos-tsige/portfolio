@@ -111,5 +111,6 @@ export const contactData = {
   phone: "+251941439593",
   location: "Addis Ababa",
   github: "https://github.com/nardos-tsige",
-  linkedin: "https://www.linkedin.com/in/nardos-tsige-b642093a3/"
+  linkedin: "https://www.linkedin.com/in/nardos-tsige-b642093a3/",
+  instagram: "https://www.instagram.com/itz_rory"
 };

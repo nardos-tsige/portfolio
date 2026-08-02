@@ -1,4 +1,4 @@
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Instagram} from 'lucide-react';
 import styles from '../styles/Footer.module.css';
 import { contactData, heroData } from '../data.js';
 
@@ -20,6 +20,9 @@ export default function Footer() {
             </a>
             <a href={contactData.linkedin} target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="LinkedIn">
               <Linkedin size={20} />
+            </a>
+            <a href={contactData.instagram} target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Instagram">
+              <Instagram size={20} />
             </a>
           </div>
         </div>
