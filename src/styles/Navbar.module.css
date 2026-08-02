@@ -1,13 +1,19 @@
 .navbar {
   position: fixed;
-  top: 12px;
+  top: 0px;             
   left: 12px;
   width: calc(100% - 24px);
-  background: var(--nav-bg);
+  background: rgba(26, 26, 26, 0.85); 
+  backdrop-filter: blur(8px);
   z-index: 100;
   border-bottom: 1px solid var(--border-color);
   transition: background 0.3s ease;
   height: 80px;
+ /* border-radius: 0 0 12px 12px;
+}
+/*to handle light mode transparency*/
+:global(body.light-mode) .navbar {
+  background: rgba(248, 249, 250, 0.85);
 }
 
 .navContainer {
