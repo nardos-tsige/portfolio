@@ -31,8 +31,7 @@ const iconVariants = {
 };
 
 export default function Contact() {
-  
-  // ✅ FIXED: Form handler that actually captures data
+   
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -88,7 +87,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* ✅ FIXED: Added name and id attributes to inputs */}
+          {/* added name and id attributes to inputs */}
           <motion.form 
             className={styles.contactForm}
             variants={childVariants}
