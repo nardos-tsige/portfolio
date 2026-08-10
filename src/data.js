@@ -99,7 +99,7 @@ export const projectsData = [
   title: "RAG-Powered Complaint Analyzer for Financial Services",
   description: "Built a RAG-powered chatbot combining FAISS semantic search with a Flan-T5-base LLM, cutting complaint-analysis time from days to minutes. Deployed an interactive Gradio dashboard with source attribution, and automated the underlying data pipeline with Dagster for reliable, repeatable runs.",
   tech: ["Python", "FAISS", "Flan-T5", "Gradio", "Dagster", "RAG"],
-  githubUrl: "https://github.com/nardos-tsige/complaint-analyzer", 
+  githubUrl: "https://github.com/nardos-tsige/rag-complaint-chatbot", 
   liveUrl: null,  
   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
   status: "github-only"
