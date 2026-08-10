@@ -8,17 +8,17 @@
 export const heroData = {
   greeting: "Hello, I'm",
   name: "Nardos Tsige",
-  title: "Junior Data Analyst",
-  bio: "Passionate Junior Data Analyst with expertise in Data Engineering, Financial Analytics, and Machine Learning. Dedicated to uncovering actionable insights from complex datasets.",
+  title: "Software Engineer | Backend & Data Systems",
+  bio: "Aspiring Software and Data Engineer with hands-on experience building end-to-end data pipelines, RAG-powered AI chatbots, and backend systems using Python, FastAPI, and dbt. Passionate about turning raw data into actionable insights.",
   imageUrl: "/profile.jpg"
 };
 
 export const aboutData = {
-  summary: "I am a Junior Data Analyst with intensive training in Data Engineering, Financial Analytics, and Machine Learning. I specialize in building end-to-end analytics pipelines, conducting exploratory data analysis, and delivering actionable business insights through data storytelling.",
+  summary: "I was a Software & Data Engineering Trainee at 10 Academy's Kifiya AI Mastery Programme, specializing in building end-to-end data pipelines, backend systems, and AI-powered analytics tools. I have built 5+ production-grade projects across finance, healthcare, and customer experience domains using Python, FastAPI, PostgreSQL, and Dagster.",
   highlights: [
     "Proficient in Python, SQL, and Data Visualization",
     "Experience with real-world climate and fintech data",
-    "Active on LeetCode (160+ problems solved)"
+    "Active on LeetCode (200+ problems solved)"
   ]
 };
 
@@ -35,8 +35,8 @@ export const educationData = [
   {
     id: 1,
     institution: "10 Academy – Kifiya AI Mastery Programme",
-    degree: "Data Analytics",
-    period: "2026 – Present",
+    degree: "Data Engineering, Machine Learning & Financial Analytics",
+    period: "2026",
     achievements: [
       "Completed intensive training in Data Engineering, Financial Analytics, and Machine Learning.",
       "Built end-to-end analytics pipelines for climate analysis and fintech customer reviews."
@@ -95,15 +95,15 @@ export const projectsData = [
     status: "github-only"
   },
   {
-    id: 4,
-    title: "A2BRIDGE | A2SV Pathfinder",
-    description: "All-in-one preparation hub for AAU, ASTU, and AASTU students aspiring to join A2SV. Features curated LeetCode problems, Python sandbox, and interview preparation.",
-    tech: ["TypeScript", "React", "Firebase", "Vite", "Vercel"],
-    githubUrl: "https://github.com/nardos-tsige/A2BRIDGE-A2SV-Pathfinder-Website",
-    liveUrl: "https://a2-bridge-a2-sv-pathfinder-website.vercel.app/",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800",
-    status: "live"
-  }
+  id: 4,
+  title: "RAG-Powered Complaint Analyzer for Financial Services",
+  description: "Built a RAG-powered chatbot combining FAISS semantic search with a Flan-T5-base LLM, cutting complaint-analysis time from days to minutes. Deployed an interactive Gradio dashboard with source attribution, and automated the underlying data pipeline with Dagster for reliable, repeatable runs.",
+  tech: ["Python", "FAISS", "Flan-T5", "Gradio", "Dagster", "RAG"],
+  githubUrl: "https://github.com/nardos-tsige/complaint-analyzer", 
+  liveUrl: null,  
+  image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+  status: "github-only"
+}
 ];
 
 export const contactData = {
