@@ -112,5 +112,6 @@ export const contactData = {
   location: "Addis Ababa",
   github: "https://github.com/nardos-tsige",
   linkedin: "https://www.linkedin.com/in/nardos-tsige-b642093a3/",
-  instagram: "https://www.instagram.com/itz_rory"
+  instagram: "https://www.instagram.com/itz_rory",
+  leetcode: "https://leetcode.com/u/nardos_tsige_fereja/"
 };
