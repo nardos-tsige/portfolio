@@ -1,4 +1,4 @@
-# Nardos Tsige - Data Analyst Portfolio
+# Nardos Tsige - Aspiring Software Engineer
 
 A modern, animated personal portfolio website built with **React**, **Vite**, and **Tailwind CSS**. Designed to showcase my skills, projects, and professional experience as a Junior Data Analyst.
 
