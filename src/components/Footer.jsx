@@ -1,7 +1,7 @@
 import { Github, Linkedin, Instagram} from 'lucide-react';
 import styles from '../styles/Footer.module.css';
 import { contactData, heroData } from '../data.js';
-import { SiLeetcode } from 'react-icons/si';
+import { SiLeetcode, SiTelegram } from 'react-icons/si';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -27,6 +27,9 @@ export default function Footer() {
             </a>
             <a href={contactData.leetcode} target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="LeetCode">
               <SiLeetcode size={20} />
+            </a>
+            <a href={contactData.telegram} target="_blank" rel="noopener noreferrer" className={styles.socialIcon} aria-label="Telegram">
+              <SiTelegram size={20} />
             </a>
           </div>
         </div>
