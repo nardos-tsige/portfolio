@@ -103,6 +103,15 @@ export const projectsData = [
   liveUrl: null,  
   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
   status: "github-only"
+}, 
+  {
+  id: 5,
+  title: "Socratic Mentor",
+  description: "An AI tutor that doesn't give answers—it asks questions. Guides students through guided inquiry, critical thinking, and step-by-step reasoning using the Socratic method. Built with React, TypeScript, Google Gemini API, and Groq API for fast, reliable AI responses.",
+  tech: ["React", "TypeScript", "Vite", "Express", "Google Gemini API", "Groq API", "Tailwind CSS"],
+  githubUrl: "https://github.com/nardos-tsige/socratic-mentor",
+  liveUrl: "https://socratic-mentor.onrender.com",
+  image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800",  status: "live"
 }
 ];
 
